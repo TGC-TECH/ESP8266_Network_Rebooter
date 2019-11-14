@@ -34,8 +34,8 @@ clik to turn <a href="buzzon">Buzz ON</a><br>
 #define BUZZ 16
 
 //SSID and Password of your WiFi router
-const char* ssid = "Toby";
-const char* password = "1234567890";
+const char* ssid = "Cowles-WiFi";
+const char* password = "2033240205";
 
 //Declare a global object variable from the ESP8266WebServer class.
 ESP8266WebServer server(80); //Server on port 80
@@ -59,6 +59,8 @@ void handleLEDoff() {
  Serial.println("LED off page");
  digitalWrite(LED,HIGH); //LED off
  server.send(200, "text/html", "LED is OFF"); //Send ADC value only to client ajax request
+ delay(10000);
+ digitalWrite(LED,LOW);
 }
 
 void handlebuzzoff() { 
