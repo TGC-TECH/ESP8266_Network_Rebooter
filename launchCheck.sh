@@ -12,9 +12,7 @@ else
 if [ Status < 2 ]
   echo 0
   echo "reseting network"
-  curl IPHERE/ledOff #powerOFF 
-  sleep 10s 
-  curl IPHERE/ledOn #powerON
+  curl IPHERE/ledOff #Reset Command
   Status=0
   sleep 5m
   fi
