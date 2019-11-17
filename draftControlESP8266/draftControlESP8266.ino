@@ -34,8 +34,8 @@ clik to turn <a href="buzzon">Buzz ON</a><br>
 #define BUZZ 16
 
 //SSID and Password of your WiFi router
-const char* ssid = "Cowles-WiFi";
-const char* password = "2033240205";
+const char* ssid = "SSIDHERE";
+const char* password = "PASSHERE";
 
 //Declare a global object variable from the ESP8266WebServer class.
 ESP8266WebServer server(80); //Server on port 80
