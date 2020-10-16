@@ -1,3 +1,5 @@
+#!/bin/bash
+
 while [ 2 > 1 ]
 do
 
